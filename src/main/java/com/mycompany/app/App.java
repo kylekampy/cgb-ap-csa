@@ -5,8 +5,16 @@
 
 package com.mycompany.app;
 
+import java.util.Scanner;
+
 public class App {
     public static void main(String[] args) {
-        System.out.println("Hello Remote World!");
+        Scanner myScanner = new Scanner(System.in);
+        System.out.print("What is your name?: ");
+        String yourName = myScanner.nextLine();
+        System.out.println();
+        System.out.println("Hello " + yourName + "!");
+
+        myScanner.close();
     }
 }
